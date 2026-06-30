@@ -587,7 +587,6 @@ export default function App() {
   const [currentHeroIdx, setCurrentHeroIdx] = useState(0);
   const [matrixRefEl, setMatrixRefEl] = useState(null);
   const [matrixInView, setMatrixInView] = useState(false);
-  const [scrollProgress, setScrollProgress] = useState(0);
 
   const [showPostModal, setShowPostModal] = useState(false);
   const [postContent, setPostContent] = useState('');
@@ -665,12 +664,6 @@ export default function App() {
     }, 700);
   };
 
-  const handleAuthScroll = (e) => {
-    const target = e.currentTarget;
-    const total = target.scrollHeight - target.clientHeight;
-    setScrollProgress(total > 0 ? Math.min(1, Math.max(0, target.scrollTop / total)) : 0);
-  };
-
   const handleJoinCircle = (circleId, message = '✨ 已为您解锁该圈层私有空间') => {
     if (!joinedCircles.includes(circleId)) {
       setJoinedCircles([...joinedCircles, circleId]);
@@ -723,13 +716,6 @@ export default function App() {
   ];
 
   if (!isAuth) {
-    const imgOpacity = Math.max(0, 1 - scrollProgress * 3);
-    const imgScale = 1 + scrollProgress * 3;
-    const textProgress = Math.min(1, Math.max(0, (scrollProgress - 0.3) * 2.5));
-    const textOpacity = textProgress;
-    const textScale = 0.9 + textProgress * 0.1;
-    const textTranslateY = (1 - textProgress) * 40;
-
     return (
       <div className="min-h-screen bg-[#dfe2ee] flex items-center justify-center md:py-6">
         <div className="mobile-shell bg-[#F8F7FF] relative overflow-hidden text-indigo-950">
@@ -739,13 +725,13 @@ export default function App() {
               .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
             `}
           </style>
-          <main onScroll={handleAuthScroll} className="auth-scroll relative z-10 h-full overflow-y-auto hide-scrollbar">
-            <section className="sticky top-0 h-full w-full overflow-hidden flex flex-col items-center justify-center bg-gradient-to-br from-[#F8F7FF] via-[#EAE1FF] to-[#FFFFFF]">
+          <main className="auth-scroll relative z-10 h-full overflow-y-auto hide-scrollbar">
+            <section className="min-h-full w-full overflow-hidden flex flex-col items-center justify-center bg-gradient-to-br from-[#F8F7FF] via-[#EAE1FF] to-[#FFFFFF] py-8">
               <div 
                 className="absolute inset-0 pointer-events-none origin-center"
                 style={{
-                  opacity: imgOpacity,
-                  transform: `scale(${imgScale})`,
+                  opacity: 0.26,
+                  transform: 'scale(1.04)',
                 }}
               >
                 {COLLAGE_IMAGES.map((img, i) => (
@@ -760,12 +746,7 @@ export default function App() {
               </div>
 
               <div
-                className="relative z-10 w-full max-w-sm flex flex-col items-center px-6 transition-all duration-75"
-                style={{
-                  opacity: textOpacity,
-                  transform: `scale(${textScale}) translateY(${textTranslateY}px)`,
-                  pointerEvents: textOpacity > 0.8 ? 'auto' : 'none'
-                }}
+                className="relative z-10 w-full max-w-sm flex flex-col items-center px-6 animate-in fade-in slide-in-from-bottom-8 duration-700"
               >
                 <div className="mb-8 text-center relative">
                   <h1 className="text-6xl font-extrabold tracking-tighter mb-4 text-[#1e1b4b] drop-shadow-lg">
@@ -885,17 +866,7 @@ export default function App() {
                 </div>
               </div>
 
-              <div 
-                className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 transition-opacity duration-300"
-                style={{ opacity: imgOpacity }}
-              >
-                <span className="text-[10px] font-black text-indigo-900/40 tracking-[0.2em] uppercase">向下滑动探索</span>
-                <div className="w-6 h-10 border-2 border-indigo-900/20 rounded-full flex justify-center p-1">
-                   <div className="w-1 h-2 bg-indigo-900/40 rounded-full animate-bounce"></div>
-                </div>
-              </div>
             </section>
-            <div className="h-[150%]" aria-hidden="true"></div>
           </main>
         </div>
       </div>

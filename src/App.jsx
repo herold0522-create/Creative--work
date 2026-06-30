@@ -880,7 +880,7 @@ export default function App() {
           <Sparkles className="text-[#a78bfa]" size={24} />
           数字文化
         </h1>
-        <p className="text-[10px] text-indigo-800/50 mt-1 font-black tracking-[0.2em] uppercase">This Circle</p>
+        <p className="text-[10px] text-indigo-800/50 mt-1 font-black tracking-[0.2em] uppercase">当前圈层</p>
         <MascotSquirrel className="absolute -top-3 -right-4 w-14 h-14 rotate-12 hover:rotate-0 hover:scale-110 transition-all cursor-pointer z-10 drop-shadow-md" />
       </div>
       <nav className="flex-1 space-y-3">
@@ -905,7 +905,7 @@ export default function App() {
         <img src={userInfo.avatar} alt="Avatar" className="w-10 h-10 rounded-full object-cover shadow-sm group-hover:scale-110 transition-transform" />
         <div className="flex-1 min-w-0">
           <p className="text-sm font-black text-indigo-950 truncate">{userInfo.name}</p>
-          <p className="text-[10px] text-indigo-800/60 font-bold uppercase tracking-wider">Pro 认证</p>
+          <p className="text-[10px] text-indigo-800/60 font-bold uppercase tracking-wider">已认证</p>
         </div>
       </div>
     </aside>
@@ -967,7 +967,7 @@ export default function App() {
             <div className="flex justify-between items-start">
               <div className="bg-white text-orange-600 font-black text-[10px] md:text-xs px-5 py-2.5 rounded-full tracking-[0.2em] uppercase shadow-lg flex items-center gap-2">
                  <div className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></div>
-                 Top Recommended
+                 今日推荐
               </div>
             </div>
             
@@ -990,13 +990,13 @@ export default function App() {
         <div className="flex flex-col gap-10 md:gap-12 pt-2">
            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 border-b border-indigo-100/60 pb-8">
               <h2 className="text-[2.8rem] md:text-6xl lg:text-[4.5rem] font-black text-indigo-950 uppercase leading-[0.85] tracking-tighter">
-                CULTURE<br className="hidden md:block lg:hidden"/>
-                <span className="text-indigo-950/40"> THAT WORKS.</span><br className="hidden lg:block"/>
+                文化<br className="hidden md:block lg:hidden"/>
+                <span className="text-indigo-950/40"> 正在发生</span><br className="hidden lg:block"/>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-rose-500">
-                  PASSION
+                  热爱
                 </span>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-rose-500 opacity-60">
-                  {' '}THAT LASTS.
+                  {' '}持续生长
                 </span>
               </h2>
               <div className="flex items-center gap-4 text-indigo-800/60 font-black tracking-widest uppercase text-xs md:text-sm lg:pb-3">
@@ -1010,7 +1010,7 @@ export default function App() {
                  <div className="w-12 h-12 md:w-14 md:h-14 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-500 mb-6 md:mb-8 shadow-inner border border-orange-100 shrink-0">
                     <MessageSquare size={24} className="md:w-7 md:h-7" strokeWidth={2.5} />
                  </div>
-                 <span className="text-[10px] font-black text-orange-400 uppercase tracking-widest mb-2 block">Feature 01</span>
+                  <span className="text-[10px] font-black text-orange-400 uppercase tracking-widest mb-2 block">亮点 01</span>
                  <h3 className="text-xl md:text-2xl font-black text-indigo-950 mb-3 md:mb-4">高质量同频共振</h3>
                  <p className="text-indigo-900/60 font-bold leading-relaxed text-xs md:text-sm flex-1">
                     设立严格的认知考核门槛。无论是考据历代汉服形制，还是切磋极具张力的同人画作，这里彻底隔绝引战与杂音，只为纯粹的热爱服务。
@@ -1021,7 +1021,7 @@ export default function App() {
                  <div className="w-12 h-12 md:w-14 md:h-14 bg-rose-50 rounded-2xl flex items-center justify-center text-rose-500 mb-6 md:mb-8 shadow-inner border border-rose-100 shrink-0">
                     <Calendar size={24} className="md:w-7 md:h-7" strokeWidth={2.5} />
                  </div>
-                 <span className="text-[10px] font-black text-rose-400 uppercase tracking-widest mb-2 block">Feature 02</span>
+                  <span className="text-[10px] font-black text-rose-400 uppercase tracking-widest mb-2 block">亮点 02</span>
                  <h3 className="text-xl md:text-2xl font-black text-indigo-950 mb-3 md:mb-4">官方组织跨次元雅集</h3>
                  <p className="text-indigo-900/60 font-bold leading-relaxed text-xs md:text-sm flex-1">
                     我们不满足于停留在屏幕另一端。从热血的线下同人面基，到春日时节的古风摄影交流，官方为您搭建跨越次元的真实相聚桥梁。
@@ -1032,7 +1032,7 @@ export default function App() {
                  <div className="w-12 h-12 md:w-14 md:h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-500 mb-6 md:mb-8 shadow-inner border border-emerald-100 shrink-0">
                     <Camera size={24} className="md:w-7 md:h-7" strokeWidth={2.5} />
                  </div>
-                 <span className="text-[10px] font-black text-emerald-400 uppercase tracking-widest mb-2 block">Feature 03</span>
+                  <span className="text-[10px] font-black text-emerald-400 uppercase tracking-widest mb-2 block">亮点 03</span>
                  <h3 className="text-xl md:text-2xl font-black text-indigo-950 mb-3 md:mb-4">沉浸式美学探索</h3>
                  <p className="text-indigo-900/60 font-bold leading-relaxed text-xs md:text-sm flex-1">
                     从胶片暗房里纯粹的物理显影，到硬核独立游戏中的关卡机制解构。拒绝快餐式的碎片消费，在这里重拾专注与长篇深度创作。
@@ -1043,7 +1043,7 @@ export default function App() {
                  <div className="w-12 h-12 md:w-14 md:h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-500 mb-6 md:mb-8 shadow-inner border border-blue-100 shrink-0">
                     <Train size={24} className="md:w-7 md:h-7" strokeWidth={2.5} />
                  </div>
-                 <span className="text-[10px] font-black text-blue-400 uppercase tracking-widest mb-2 block">Feature 04</span>
+                  <span className="text-[10px] font-black text-blue-400 uppercase tracking-widest mb-2 block">亮点 04</span>
                  <h3 className="text-xl md:text-2xl font-black text-indigo-950 mb-3 md:mb-4">极客级硬核记录</h3>
                  <p className="text-indigo-900/60 font-bold leading-relaxed text-xs md:text-sm flex-1">
                     丈量城市交通脉络的列车运转路书，亦或是精确到秒的手冲咖啡萃取曲线。无论领域多小众，都有极客级同好与你进行参数级研讨。
@@ -1135,7 +1135,7 @@ export default function App() {
               多元矩阵，<br/>由此展开。
             </h3>
             <p className="text-indigo-100 font-black text-xs md:text-sm tracking-[0.4em] uppercase drop-shadow-[0_2px_15px_rgba(0,0,0,0.9)]">
-              Explore Your Spiritual Matrix
+              探索你的精神矩阵
             </p>
           </div>
 
@@ -1182,7 +1182,7 @@ export default function App() {
                <div className="absolute bottom-6 left-6 right-6 md:bottom-10 md:left-10 md:right-10 flex flex-col md:flex-row md:items-end justify-between gap-6 text-left text-white">
                   <div className="max-w-lg text-left">
                      <div className="flex items-center gap-2 mb-3">
-                       <span className="bg-white/20 backdrop-blur-md px-2 py-0.5 rounded text-[10px] font-black tracking-widest uppercase border border-white/30">Top Event</span>
+                        <span className="bg-white/20 backdrop-blur-md px-2 py-0.5 rounded text-[10px] font-black tracking-widest uppercase border border-white/30">热门活动</span>
                        <span className="text-xs font-bold text-white/90">{hero.circle}</span>
                      </div>
                      <h2 className="text-3xl md:text-5xl font-black mb-3 leading-tight">{hero.title}</h2>
@@ -1301,7 +1301,7 @@ export default function App() {
                  </div>
                  <div>
                     <h2 className="text-2xl font-black text-indigo-950 flex items-center gap-2">
-                       Why ? 
+                        为什么？
                     </h2>
                     <p className="text-[11px] md:text-xs text-indigo-800/60 font-bold mt-0.5">好多同频者有疑问，快去帮他们一下吧</p>
                  </div>
@@ -1349,7 +1349,7 @@ export default function App() {
       
       <div className="px-6 text-center mt-8 mb-24 relative flex flex-col items-center">
         <style>{`@keyframes hugeShrink { 0% { transform: scale(3.5); opacity: 0; filter: blur(12px); } 40% { opacity: 1; filter: blur(0px); } 100% { transform: scale(1); opacity: 1; filter: blur(0px); } } .animate-huge-shrink { animation: hugeShrink 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }`}</style>
-        <span className="text-[10px] md:text-xs font-black tracking-[0.4em] text-[#a78bfa] uppercase mb-4 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-300">Find Your Spiritual Sanctuary</span>
+        <span className="text-[10px] md:text-xs font-black tracking-[0.4em] text-[#a78bfa] uppercase mb-4 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-300">找到你的精神领地</span>
         <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-indigo-950 relative z-10 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100">遇见，你的</h2>
         <div className="mt-[-0.5rem] md:mt-[-1.5rem] relative z-20">
           <h1 className="text-6xl md:text-8xl lg:text-[8rem] font-black text-white tracking-tighter drop-shadow-xl animate-huge-shrink leading-none text-center">精神领地<span className="text-indigo-200">.</span></h1>
@@ -1689,7 +1689,7 @@ export default function App() {
                   <div className="relative z-10 mt-12 flex w-full max-w-md mx-auto px-4 ani-up" style={{ animationDelay: '400ms' }}>
                     <input 
                       type="text" 
-                      placeholder="Your email address or search..." 
+                      placeholder="搜索帖子或输入邮箱..." 
                       className="flex-1 bg-white border border-indigo-100 rounded-l-lg pl-6 pr-4 py-3 md:py-4 text-sm font-bold text-indigo-950 focus:outline-none focus:border-[#a78bfa] shadow-sm placeholder:text-indigo-300"
                     />
                     <button className="bg-[#1e1b4b] text-white px-5 py-3 md:py-4 rounded-r-lg hover:bg-[#a78bfa] transition-colors shadow-sm flex items-center justify-center">
@@ -1701,7 +1701,7 @@ export default function App() {
                     <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-indigo-950/20 -translate-y-1/2 z-0"></div>
                     <div className="flex justify-between items-center relative z-10 text-[10px] md:text-[11px] font-bold text-indigo-900/60 uppercase tracking-widest px-2">
                       <span className="bg-[#F8F7FF] pr-4">{activeCircle.founder || '17 February 2026'}</span>
-                      <span className="bg-[#F8F7FF] pl-4">{activeCircle.members} Members</span>
+                      <span className="bg-[#F8F7FF] pl-4">{activeCircle.members} 位成员</span>
                     </div>
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
                       <div className={`w-20 h-28 md:w-24 md:h-32 rounded-[3rem] bg-gradient-to-br ${activeCircle.iconTheme || 'from-[#b7a8ff] to-[#c084fc]'} shadow-xl flex items-center justify-center border-[6px] border-[#F8F7FF] relative overflow-hidden`}>
@@ -1714,8 +1714,8 @@ export default function App() {
 
                 <div className="pt-8 pb-12 px-2 md:px-0 max-w-5xl mx-auto w-full text-left ani-up" style={{ animationDelay: '700ms' }}>
                    <div className="flex justify-between items-end mb-8 border-b border-indigo-900/10 pb-4">
-                      <h2 className="text-4xl md:text-5xl font-serif font-black text-[#1e1b4b]">Latest</h2>
-                      <button onClick={() => setShowCircleAllPosts(true)} className="bg-[#1e1b4b] text-white px-5 py-2.5 rounded-lg text-xs font-bold hover:bg-[#a78bfa] transition-colors shadow-sm tracking-wide">Browse All</button>
+                      <h2 className="text-4xl md:text-5xl font-serif font-black text-[#1e1b4b]">最新动态</h2>
+                      <button onClick={() => setShowCircleAllPosts(true)} className="bg-[#1e1b4b] text-white px-5 py-2.5 rounded-lg text-xs font-bold hover:bg-[#a78bfa] transition-colors shadow-sm tracking-wide">查看全部</button>
                    </div>
 
                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
@@ -1906,9 +1906,9 @@ export default function App() {
         {/* 顶部导航栏：干净的边框切分 */}
         <div className="sticky top-0 bg-[#Fdfbf7]/90 backdrop-blur-md z-50 border-b border-[#111]/20 px-6 py-4 flex justify-between items-center">
            <button onClick={() => setActiveActivity(null)} className="flex items-center gap-2 font-black uppercase tracking-widest text-xs hover:text-rose-600 transition-colors">
-             <ArrowLeft size={16} strokeWidth={3} /> Back
+             <ArrowLeft size={16} strokeWidth={3} /> 返回
            </button>
-           <span className="font-serif font-black tracking-widest text-sm uppercase hidden md:block">The Editorial</span>
+           <span className="font-serif font-black tracking-widest text-sm uppercase hidden md:block">活动特辑</span>
            <div className="w-16"></div>
         </div>
 
@@ -1917,20 +1917,20 @@ export default function App() {
            {/* 极致复刻：报纸风格头部 (THE EVENT) */}
            <div className="text-center border-b-4 border-[#111] pb-6 mb-4">
              <h1 className="text-[3.5rem] md:text-[6.5rem] font-serif font-black tracking-tighter leading-[0.85] uppercase">
-               THE EVENT.
+                活动特辑
              </h1>
            </div>
 
            {/* 信息副条 (细线切分风格) */}
            <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2 border-b border-[#111] pb-3 mb-12 text-[10px] md:text-xs font-black uppercase tracking-widest">
-             <span className="text-[#111]/60">Vol. 1 — {new Date().getFullYear()}</span>
+              <span className="text-[#111]/60">第 1 期 — {new Date().getFullYear()}</span>
              <span className="text-rose-600 flex items-center gap-1"><Zap size={12} className="fill-rose-600"/> {activeActivity.circle}</span>
              <span className="text-[#111]/60">{activeActivity.date}</span>
            </div>
 
            {/* 图2复刻：带十字架线条的区块标题 */}
            <div className="flex items-center gap-4 mb-8">
-             <h2 className="font-serif font-black text-4xl md:text-5xl tracking-tight text-[#111]">Details</h2>
+              <h2 className="font-serif font-black text-4xl md:text-5xl tracking-tight text-[#111]">活动详情</h2>
              <div className="flex-1 h-[2px] bg-[#111]"></div>
              <div className="w-8 h-8 bg-[#111] text-white flex items-center justify-center shrink-0">
                 <Plus size={16} strokeWidth={3} />
@@ -1951,8 +1951,8 @@ export default function App() {
                  
                  <div className="w-full aspect-[4/3] md:aspect-[16/9] bg-gray-200 mb-8 border border-[#111]/10 overflow-hidden relative group">
                    <img src={activeActivity.cover} alt={activeActivity.title} className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700" />
-                   <div className="absolute bottom-0 left-0 bg-[#111] text-white text-[10px] font-black tracking-widest uppercase px-4 py-2">
-                     Featured Image
+                    <div className="absolute bottom-0 left-0 bg-[#111] text-white text-[10px] font-black tracking-widest uppercase px-4 py-2">
+                      精选图片
                    </div>
                  </div>
                  
@@ -1970,14 +1970,14 @@ export default function App() {
                  
                  {/* 黑底红边的醒目报名区块 */}
                  <div className="bg-[#111] text-[#Fdfbf7] p-8 border-t-8 border-rose-600">
-                   <h4 className="font-serif font-black text-2xl mb-4 italic">Action Required.</h4>
-                   <p className="text-xs opacity-70 mb-8 font-bold leading-relaxed">Secure your spot for this exclusive gathering. Limited availability, reserve now.</p>
+                    <h4 className="font-serif font-black text-2xl mb-4 italic">立即行动</h4>
+                    <p className="text-xs opacity-70 mb-8 font-bold leading-relaxed">名额有限，欢迎提前预约，锁定你的活动席位。</p>
                    <button 
                      onClick={(e) => { e.stopPropagation(); handleRegisterEvent(activeActivity.id, e); }}
                      disabled={isRegistered}
                      className={`w-full py-4 font-black tracking-widest uppercase text-xs transition-all flex items-center justify-center gap-2 ${isRegistered ? 'bg-white/10 text-white/50 cursor-not-allowed' : 'bg-rose-600 text-white hover:bg-rose-700 hover:-translate-y-1'}`}
                    >
-                     {isRegistered ? '已报名 (Registered)' : <>立即报名 (Register) <ArrowRight size={14} strokeWidth={3} /></>}
+                      {isRegistered ? '已报名' : <>立即报名 <ArrowRight size={14} strokeWidth={3} /></>}
                    </button>
                  </div>
 
@@ -1985,19 +1985,19 @@ export default function App() {
                  <div>
                    <div className="flex items-center gap-3 border-b-2 border-[#111] pb-2 mb-4">
                      <span className="w-2.5 h-2.5 bg-rose-600 inline-block"></span>
-                     <h4 className="font-black uppercase tracking-widest text-sm">Key Info</h4>
+                      <h4 className="font-black uppercase tracking-widest text-sm">关键信息</h4>
                    </div>
                    <ul className="space-y-4 text-sm font-bold">
                      <li className="flex flex-col border-b border-[#111]/10 pb-3">
-                       <span className="text-[#111]/50 uppercase text-[10px] tracking-widest mb-1">Host Circle</span>
+                        <span className="text-[#111]/50 uppercase text-[10px] tracking-widest mb-1">主办圈子</span>
                        <span className="text-lg font-serif">{activeActivity.circle}</span>
                      </li>
                      <li className="flex flex-col border-b border-[#111]/10 pb-3">
-                       <span className="text-[#111]/50 uppercase text-[10px] tracking-widest mb-1">Date & Time</span>
+                        <span className="text-[#111]/50 uppercase text-[10px] tracking-widest mb-1">活动时间</span>
                        <span className="text-lg font-serif">{activeActivity.date}</span>
                      </li>
                      <li className="flex flex-col border-b border-[#111]/10 pb-3">
-                       <span className="text-[#111]/50 uppercase text-[10px] tracking-widest mb-1">Location</span>
+                        <span className="text-[#111]/50 uppercase text-[10px] tracking-widest mb-1">活动地点</span>
                        <span className="text-lg font-serif">好创意活动中心</span>
                      </li>
                    </ul>
@@ -2005,9 +2005,9 @@ export default function App() {
                  
                  {/* 填补视觉的副宣传块 */}
                  <div className="bg-[#ea580c] p-8 text-white text-center flex flex-col items-center shadow-inner">
-                    <span className="text-[10px] font-black tracking-widest uppercase mb-3 opacity-80">Official Partner</span>
-                    <Compass size={32} strokeWidth={2} className="mb-3" />
-                    <h5 className="font-serif font-black text-2xl leading-none">Culture<br/>That Works.</h5>
+                     <span className="text-[10px] font-black tracking-widest uppercase mb-3 opacity-80">官方合作</span>
+                     <Compass size={32} strokeWidth={2} className="mb-3" />
+                     <h5 className="font-serif font-black text-2xl leading-none">文化<br/>正在发生</h5>
                  </div>
               </div>
            </div>
@@ -2030,9 +2030,9 @@ export default function App() {
         {/* 顶部导航栏 */}
         <div className="sticky top-0 bg-[#Fdfbf7]/90 backdrop-blur-md z-50 border-b border-[#111]/20 px-6 py-4 flex justify-between items-center">
            <button onClick={() => setShowAllPosts(false)} className="flex items-center gap-2 font-black uppercase tracking-widest text-xs hover:text-[#ea580c] transition-colors">
-             <ArrowLeft size={16} strokeWidth={3} /> Back
+             <ArrowLeft size={16} strokeWidth={3} /> 返回
            </button>
-           <span className="font-serif font-black tracking-widest text-sm uppercase hidden md:block">Daily Digest</span>
+           <span className="font-serif font-black tracking-widest text-sm uppercase hidden md:block">每日精选</span>
            <div className="w-16"></div>
         </div>
 
@@ -2041,18 +2041,18 @@ export default function App() {
            {/* 图2复刻：顶部 Slogan 与搜索栏 */}
            <div className="text-center mb-16 max-w-2xl mx-auto">
              <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-serif font-black tracking-tight leading-[1.1] mb-8 text-[#111]">
-               Get the <span className="relative inline-block px-1"><span className="relative z-10 text-[#111]">real signals</span><span className="absolute bottom-1 left-0 w-full h-3 bg-yellow-300 -skew-x-6 z-0"></span></span> behind trends and culture.
+                看见趋势与文化背后的<span className="relative inline-block px-1"><span className="relative z-10 text-[#111]">真实信号</span><span className="absolute bottom-1 left-0 w-full h-3 bg-yellow-300 -skew-x-6 z-0"></span></span>。
              </h1>
              <div className="flex w-full max-w-md mx-auto shadow-sm">
-               <input type="text" placeholder="Search the archives..." className="flex-1 border border-[#111]/20 bg-white px-4 py-3 text-sm focus:outline-none focus:border-[#111] font-serif" />
-               <button className="bg-[#111] text-white px-6 py-3 font-bold text-sm hover:bg-[#ea580c] transition-colors">Search</button>
+                <input type="text" placeholder="搜索历史文章..." className="flex-1 border border-[#111]/20 bg-white px-4 py-3 text-sm focus:outline-none focus:border-[#111] font-serif" />
+                <button className="bg-[#111] text-white px-6 py-3 font-bold text-sm hover:bg-[#ea580c] transition-colors">搜索</button>
              </div>
            </div>
 
            {/* 图2复刻：Top Stories 区块 (4栏网格) */}
            <div className="mb-12">
              <div className="border-y border-[#111] py-2 mb-8 flex justify-between items-center">
-               <h2 className="font-serif font-black text-xl uppercase tracking-wider">Top Stories</h2>
+                <h2 className="font-serif font-black text-xl uppercase tracking-wider">头条精选</h2>
              </div>
              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                {featured.map((post, i) => (
@@ -2063,7 +2063,7 @@ export default function App() {
                    <h4 className="text-[10px] uppercase tracking-widest text-[#ea580c] font-black mb-2">{post.category}</h4>
                    <h3 className="font-serif text-lg font-bold leading-snug mb-2 group-hover:text-[#ea580c] transition-colors">{post.title}</h3>
                    <div className="flex items-center gap-2 text-[10px] text-[#111]/50 uppercase tracking-widest">
-                      <span>By {post.author}</span>
+                       <span>作者 {post.author}</span>
                    </div>
                  </div>
                ))}
@@ -2073,18 +2073,18 @@ export default function App() {
            {/* 图2复刻：横向拉通的巨型横幅 (Banner) */}
            <div className="w-full bg-[#111] text-[#Fdfbf7] p-10 md:p-16 mb-16 flex flex-col md:flex-row items-center justify-between gap-8 border-y-8 border-[#ea580c]">
               <div className="max-w-xl text-center md:text-left">
-                <h2 className="font-serif text-3xl md:text-5xl font-black mb-4 leading-tight text-white">How to find a hobby that suits you in 2026.</h2>
-                <p className="font-serif text-lg opacity-80 text-white/80">Download our proprietary reports to stay ahead.</p>
+                 <h2 className="font-serif text-3xl md:text-5xl font-black mb-4 leading-tight text-white">2026，如何找到真正适合你的兴趣？</h2>
+                 <p className="font-serif text-lg opacity-80 text-white/80">阅读精选报告，提前捕捉文化趋势。</p>
               </div>
               <button className="bg-[#Fdfbf7] text-[#111] font-black uppercase tracking-widest text-xs px-8 py-4 hover:bg-[#ea580c] hover:text-white transition-colors shrink-0">
-                Read Now
+                 立即阅读
               </button>
            </div>
 
            {/* 图2复刻：Culture & Trends 区块 */}
            <div className="mb-16">
              <div className="border-y border-[#111] py-2 mb-8">
-               <h2 className="font-serif font-black text-xl uppercase tracking-wider">Culture & Trends</h2>
+                <h2 className="font-serif font-black text-xl uppercase tracking-wider">文化趋势</h2>
              </div>
              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                {fashion.map((post, i) => (
@@ -2102,7 +2102,7 @@ export default function App() {
            {/* 图2复刻：Latest News 密集的左右列表版式 */}
            <div className="mb-16">
              <div className="border-y border-[#111] py-2 mb-8">
-               <h2 className="font-serif font-black text-xl uppercase tracking-wider">Latest News</h2>
+                <h2 className="font-serif font-black text-xl uppercase tracking-wider">最新资讯</h2>
              </div>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                {latest.map((post, i) => (
@@ -2110,7 +2110,7 @@ export default function App() {
                    <div className="flex-1">
                      <h4 className="text-[10px] uppercase tracking-widest text-rose-600 font-black mb-2">{post.category}</h4>
                      <h3 className="font-serif text-[15px] md:text-[17px] font-bold leading-snug mb-3 group-hover:text-rose-600 transition-colors">{post.title}</h3>
-                     <p className="text-[10px] text-[#111]/50 uppercase tracking-widest">By {post.author}</p>
+                      <p className="text-[10px] text-[#111]/50 uppercase tracking-widest">作者 {post.author}</p>
                    </div>
                    <div className="w-28 h-20 md:w-36 md:h-28 shrink-0 bg-gray-200 overflow-hidden">
                      <img src={post.image} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt=""/>
@@ -2124,7 +2124,7 @@ export default function App() {
            {deepDives.length > 0 && (
              <div className="bg-[#111] text-[#Fdfbf7] p-8 md:p-12 -mx-6 md:-mx-12 mb-16">
                <div className="border-y border-[#Fdfbf7]/20 py-2 mb-10">
-                 <h2 className="font-serif font-black text-xl uppercase tracking-wider">Deep Dives</h2>
+                  <h2 className="font-serif font-black text-xl uppercase tracking-wider">深度观察</h2>
                </div>
                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                  {deepDives.map((post, i) => (
@@ -2142,9 +2142,9 @@ export default function App() {
 
            {/* 图2复刻：底部居中大字呼吁栏 (Upgrade to Pro) */}
            <div className="text-center border-y-4 border-[#111] py-16 px-4">
-              <h2 className="font-serif text-4xl md:text-[4rem] font-black mb-6 tracking-tight">Upgrade to Pro</h2>
-              <p className="font-serif text-lg opacity-80 mb-8 max-w-lg mx-auto">Get smarter in 5 minutes. Support independent culture writing and gain full access to private sections.</p>
-              <button className="bg-[#111] text-white px-10 py-4 font-black uppercase tracking-widest text-xs hover:bg-[#ea580c] transition-colors shadow-xl">Subscribe Now</button>
+               <h2 className="font-serif text-4xl md:text-[4rem] font-black mb-6 tracking-tight">升级为同频 Pro</h2>
+               <p className="font-serif text-lg opacity-80 mb-8 max-w-lg mx-auto">用五分钟读懂趋势，支持独立文化写作，并获得更多圈内深度内容。</p>
+               <button className="bg-[#111] text-white px-10 py-4 font-black uppercase tracking-widest text-xs hover:bg-[#ea580c] transition-colors shadow-xl">立即升级</button>
            </div>
 
         </div>
@@ -2164,16 +2164,16 @@ export default function App() {
     const mainRight1 = displayPosts[2];
     const mainRight2 = displayPosts[3];
     
-    const row2Tag = activeCircle.tags[0] || 'Culture';
+    const row2Tag = activeCircle.tags[0] || '文化';
     const row2Posts = displayPosts.slice(4, 8);
     
-    const row3Tag = activeCircle.tags[1] || 'Lifestyle';
+    const row3Tag = activeCircle.tags[1] || '生活';
     const row3Posts = displayPosts.slice(8, 12);
     
-    const row4Tag = activeCircle.tags[2] || 'Insights';
+    const row4Tag = activeCircle.tags[2] || '洞察';
     const row4Posts = displayPosts.slice(12, 16);
     
-    const row5Tag = activeCircle.tags[3] || 'Archives';
+    const row5Tag = activeCircle.tags[3] || '档案';
     const row5Posts = displayPosts.slice(16, 20);
 
     return (
@@ -2182,9 +2182,9 @@ export default function App() {
         {/* 顶部导航栏 */}
         <div className="sticky top-0 bg-[#F4F1EA]/90 backdrop-blur-md z-50 border-b border-[#111]/20 px-6 py-4 flex justify-between items-center">
            <button onClick={() => setShowCircleAllPosts(false)} className="flex items-center gap-2 font-black uppercase tracking-widest text-xs hover:text-rose-600 transition-colors">
-             <ArrowLeft size={16} strokeWidth={3} /> Back to Circle
-           </button>
-           <span className="font-serif font-black tracking-widest text-sm uppercase hidden md:block">Circle Press</span>
+              <ArrowLeft size={16} strokeWidth={3} /> 返回圈子
+            </button>
+            <span className="font-serif font-black tracking-widest text-sm uppercase hidden md:block">圈子报刊</span>
            <div className="w-16"></div>
         </div>
 
@@ -2193,15 +2193,15 @@ export default function App() {
            {/* 报纸头部 THE FREE PRESS 风格 */}
            <div className="text-center mb-2 flex flex-col items-center">
              <h1 className="text-[3rem] md:text-[5rem] lg:text-[6rem] font-serif font-black tracking-tighter leading-[0.85] uppercase text-[#111]">
-               THE {activeCircle.name}
+                {activeCircle.name}专刊
              </h1>
            </div>
 
            {/* 日期/期数横条 (上下细线) */}
            <div className="flex justify-between items-center border-y border-[#111] py-2 mb-8 text-[9px] md:text-[11px] font-black uppercase tracking-widest text-[#111]/70">
-             <span>{new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
-             <span className="hidden sm:block">A DIGITAL PUBLICATION BY THIS CIRCLE</span>
-             <span>Vol. {activeCircle.members}</span>
+              <span>{new Date().toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+              <span className="hidden sm:block">本圈层数字专刊</span>
+              <span>{activeCircle.members} 位成员</span>
            </div>
 
            {/* 头版 Top News 排版区 */}
@@ -2214,7 +2214,7 @@ export default function App() {
                    <img src={mainLeft?.image} className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-500" alt=""/>
                  </div>
                  <p className="text-xs font-serif text-[#111]/70 line-clamp-3 mb-2">圈内最新硬核探讨，点击阅读深度解析与同好们的思想交锋...</p>
-                 <span className="text-[9px] uppercase tracking-widest font-black text-[#111]/50 border-t border-[#111]/10 pt-2 block mt-auto">By {mainLeft?.author}</span>
+                 <span className="text-[9px] uppercase tracking-widest font-black text-[#111]/50 border-t border-[#111]/10 pt-2 block mt-auto">作者 {mainLeft?.author}</span>
               </div>
 
               {/* 中栏：图片在上，标题在下 (视觉核心) */}
@@ -2227,7 +2227,7 @@ export default function App() {
                  
                  {/* 中栏内部作者模块 */}
                  <div className="mt-auto border border-[#111]/20 p-4 text-center">
-                    <span className="text-[10px] uppercase tracking-widest font-black text-[#111]/50 block mb-2">— TOP CONTRIBUTOR —</span>
+                    <span className="text-[10px] uppercase tracking-widest font-black text-[#111]/50 block mb-2">— 核心贡献者 —</span>
                     <div className="flex items-center justify-center gap-3">
                        <img src={userInfo.avatar} className="w-8 h-8 rounded-full grayscale" alt=""/>
                        <span className="font-serif font-bold text-sm">{mainCenter?.author}</span>
@@ -2242,14 +2242,14 @@ export default function App() {
                       <img src={mainRight1?.image} className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-500" alt=""/>
                     </div>
                     <h3 className="font-serif text-lg font-black leading-snug mb-2 group-hover:text-rose-600 transition-colors">{mainRight1?.title}</h3>
-                    <span className="text-[9px] uppercase tracking-widest font-black text-[#111]/50">By {mainRight1?.author}</span>
+                    <span className="text-[9px] uppercase tracking-widest font-black text-[#111]/50">作者 {mainRight1?.author}</span>
                  </div>
                  <div className="group cursor-pointer" onClick={() => { if(mainRight2) setActivePost(mainRight2); }}>
                     <h3 className="font-serif text-lg font-black leading-snug mb-3 group-hover:text-rose-600 transition-colors">{mainRight2?.title}</h3>
                     <div className="w-full aspect-[3/2] bg-gray-200 overflow-hidden mb-2">
                       <img src={mainRight2?.image} className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-500" alt=""/>
                     </div>
-                    <span className="text-[9px] uppercase tracking-widest font-black text-[#111]/50">By {mainRight2?.author}</span>
+                    <span className="text-[9px] uppercase tracking-widest font-black text-[#111]/50">作者 {mainRight2?.author}</span>
                  </div>
               </div>
            </div>
@@ -2291,7 +2291,7 @@ export default function App() {
                         </div>
                         <h3 className="font-serif text-base font-bold leading-snug mb-2 group-hover:text-rose-600 transition-colors text-center flex-1">{p?.title}</h3>
                         <div className="text-center mt-auto border-t border-[#111]/10 pt-3">
-                           <span className="text-[9px] uppercase tracking-widest font-black text-[#111]/50">By {p?.author}</span>
+                           <span className="text-[9px] uppercase tracking-widest font-black text-[#111]/50">作者 {p?.author}</span>
                         </div>
                      </div>
                   ))}
@@ -2336,7 +2336,7 @@ export default function App() {
                         </div>
                         <h3 className="font-serif text-base font-bold leading-snug mb-2 group-hover:text-rose-600 transition-colors text-center flex-1">{p?.title}</h3>
                         <div className="text-center mt-auto border-t border-[#111]/10 pt-3">
-                           <span className="text-[9px] uppercase tracking-widest font-black text-[#111]/50">By {p?.author}</span>
+                           <span className="text-[9px] uppercase tracking-widest font-black text-[#111]/50">作者 {p?.author}</span>
                         </div>
                      </div>
                   ))}
@@ -2405,7 +2405,7 @@ export default function App() {
         {/* 顶部导航栏 */}
         <div className="sticky top-0 bg-[#Fdfbf7]/95 backdrop-blur-md z-50 border-b border-[#111]/10 px-6 py-4 flex justify-between items-center">
            <button onClick={() => setActivePost(null)} className="flex items-center gap-2 font-black uppercase tracking-widest text-xs hover:text-rose-600 transition-colors">
-             <ArrowLeft size={16} strokeWidth={3} /> Close Article
+             <ArrowLeft size={16} strokeWidth={3} /> 关闭文章
            </button>
            <div className="flex items-center gap-4">
              <button onClick={handleLikeToggle} className={`flex items-center gap-1.5 transition-colors ${isLiked ? 'text-rose-600' : 'text-[#111]/50 hover:text-[#111]'}`}>
@@ -2419,7 +2419,7 @@ export default function App() {
            {/* 杂志风排版头部 */}
            <div className="text-center mb-12">
              <h4 className="text-[10px] md:text-xs font-black uppercase tracking-widest text-[#ea580c] mb-6">
-               — {activePost.category || 'Editorial Reading'} —
+                — {activePost.category || '深度阅读'} —
              </h4>
              <h1 className="text-3xl md:text-5xl lg:text-[3.5rem] font-serif font-black tracking-tight leading-[1.15] text-[#111] mb-8 max-w-3xl mx-auto">
                {activePost.title}
@@ -2427,10 +2427,10 @@ export default function App() {
              <div className="flex items-center justify-center gap-4 text-xs font-bold text-[#111]/60 uppercase tracking-widest">
                 <span className="flex items-center gap-2">
                   <img src={userInfo.avatar} className="w-6 h-6 rounded-full grayscale" alt="" />
-                  By {activePost.author}
+                  作者 {activePost.author}
                 </span>
                 <span>•</span>
-                <span>{new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+                <span>{new Date().toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
              </div>
            </div>
 
@@ -2459,18 +2459,18 @@ export default function App() {
            <div className="max-w-2xl mx-auto mt-16 pt-8 border-t border-[#111]/20 flex items-center justify-between">
               <div className="flex items-center gap-6">
                 <button onClick={handleLikeToggle} className={`flex items-center gap-2 text-sm font-black uppercase tracking-widest transition-all ${isLiked ? 'text-rose-600' : 'text-[#111]/60 hover:text-[#111]'}`}>
-                  <Heart size={20} strokeWidth={3} className={isLiked ? "fill-rose-600" : ""} /> {isLiked ? '已赞 (Liked)' : '点赞 (Like)'}
+                  <Heart size={20} strokeWidth={3} className={isLiked ? "fill-rose-600" : ""} /> {isLiked ? '已赞' : '点赞'}
                 </button>
               </div>
               <div className="flex items-center gap-2 text-[10px] text-[#111]/40 uppercase tracking-widest font-black">
-                <span>{activePost.views || '8.2k'} Views</span>
+                <span>{activePost.views || '8.2k'} 次阅读</span>
               </div>
            </div>
 
            {/* 👇 互动评论区 👇 */}
            <div className="max-w-2xl mx-auto mt-16 bg-white border border-[#111]/10 p-6 md:p-10 shadow-sm">
               <h3 className="font-serif font-black text-2xl mb-8 flex items-center gap-3">
-                 <MessageCircle size={24} /> Discussions <span className="text-[#111]/40 text-lg">({comments.length})</span>
+                 <MessageCircle size={24} /> 讨论 <span className="text-[#111]/40 text-lg">({comments.length})</span>
               </h3>
 
               {/* 评论列表 */}
@@ -2488,7 +2488,7 @@ export default function App() {
                    </div>
                  )) : (
                    <div className="text-center py-10 text-[#111]/40 font-serif italic text-sm">
-                     "Be the first to share your thoughts on this editorial."
+                     还没有评论，来分享你的想法吧。
                    </div>
                  )}
               </div>
@@ -2501,7 +2501,7 @@ export default function App() {
                       type="text" 
                       value={commentInput}
                       onChange={(e) => setCommentInput(e.target.value)}
-                      placeholder="Share your insights..." 
+                      placeholder="分享你的见解..." 
                       className="w-full bg-[#Fdfbf7] border border-[#111]/20 rounded-none px-4 py-3 text-sm focus:outline-none focus:border-[#111] font-serif transition-colors pr-12"
                     />
                     <button type="submit" className="absolute right-3 top-1/2 -translate-y-1/2 text-[#111]/50 hover:text-[#ea580c] transition-colors">
